@@ -1,6 +1,6 @@
 $(function() {
  $("#madLib").submit(function(event) {
-var blanks = ["firstName", "lastName", "verb", "noun", "city"];
+   var blanks = ["firstName", "lastName", "verb", "noun", "city"];
 
   //  var firstName = $("input#firstName").val();
   //  var lastName = $("input#lastName").val();
@@ -8,10 +8,10 @@ var blanks = ["firstName", "lastName", "verb", "noun", "city"];
   //  var noun = $("input#noun").val();
   //  var city = $("input#city").val();
 
-blanks.forEach(function(blank) {
-  var userInput = $("input#" + blank).val();
-  $("." + blank).text(userInput);
-});
+    blanks.forEach(function(blank) {
+      var userInput = $("input#" + blank).val();
+      $("." + blank).text(userInput);
+    });
   //  $(".firstName").append(firstName);
   //  $(".lastName").append(lastName);
   //  $(".verb").append(verb);
@@ -19,7 +19,6 @@ blanks.forEach(function(blank) {
   //  $(".city").append(city);
 
    $("#story").show();
-
    event.preventDefault();
  });
 });
